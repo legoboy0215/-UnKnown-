@@ -28,11 +28,11 @@ use pocketmine\command\ConsoleCommandSender;
     foreach((array)$this->getConfig()->get("tip1") as $tip1){
     foreach((array)$this->getConfig()->get("message1") as $message1){
     foreach((array)$this->getConfig()->get("popup1") as $popup1){
-     $player->sendTip($tip1 . ' ');
-     $player->sendMessage($message1 . ' ');
-     $player->sendPopup($popup1 . ' ');
+     $player->sendTip($tip1 .' ');
+     $player->sendMessage($message1 .' ');
+     $player->sendPopup($popup1 ." ");
      foreach((array)$this->getConfig()->get("command1") as $command1){
-  $this->getServer()->dispatchCommand(new ConsoleCommandSender(), str_replace("{player}", $player->getName(), $command));	
+  $this->getServer()->dispatchCommand(new ConsoleCommandSender(), str_replace("{player}", $player->getName(), $command1));	
    }
    }
    }
