@@ -19,7 +19,7 @@ use pocketmine\command\ConsoleCommandSender;
    	$this->saveDefaultConfig();
        	}
    public function ItemHeld(PlayerItemHeldEvent $event) {
-    item = $event->getItem();
+  $item = $event->getItem();
   $id = $item->getId();
   $player = $event->getPlayer();
   if($this->getConfig()->get("enable-plugin") == "true"){
