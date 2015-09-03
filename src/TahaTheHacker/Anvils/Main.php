@@ -25,9 +25,9 @@ use pocketmine\command\ConsoleCommandSender;
   if($this->getConfig()->get("enable-plugin") == "true"){
    foreach((array)$this->getConfig()->get("id1") as $id1){
    if($id == $id1){
-    foreach((array)$this->getConfig()->get("tip1") as $tip1{
-    foreach((array)$this->getConfig()->get("message1") as $message1{
-    foreach((array)$this->getConfig()->get("popup1") as $popup1{
+    foreach((array)$this->getConfig()->get("tip1") as $tip1){
+    foreach((array)$this->getConfig()->get("message1") as $message1){
+    foreach((array)$this->getConfig()->get("popup1") as $popup1){
      $player->sendTip($tip1 . '');
      $player->sendMessage($message1 . '');
      $player->sendPopup($popup1 . '');
