@@ -1,1 +1,6 @@
-
+#the first id of the item.
+id1: 0
+#popups messages and so on.
+message1: §bworks Perfect.
+popup1: §aWORKS
+tip1: §dExited§6!
