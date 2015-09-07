@@ -2,7 +2,6 @@
 namespace TahaTheHacker\Anvils;
 
 use pocketmine\plugin\PluginBase;
-use pocketmine\plugin\PluginLoader;
 use pocketmine\Player;
 use pocketmine\event\player\PlayerItemHeldEvent;
 use pocketmine\item\Item;
