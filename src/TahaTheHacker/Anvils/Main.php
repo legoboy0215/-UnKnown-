@@ -13,12 +13,12 @@ use pocketmine\command\ConsoleCommandSender;
   
    public function onEnable(){
      $this->getServer()->getPluginManager()->registerEvents($this, $this);
-     $this->getLogger()->info(TextFormat::DARK_GREEN . "✔ §c+§6Snowball§cs§2 Enabled");
+     $this->getLogger()->info(TextFormat::DARK_GREEN . "✔ §c+§6Almost unknown.:3§c§2 Enabled");
    }
-   public function ItemHeld(PlayerItemHeldEvent $event) {
+   public function  playerBlockTouch(PlayerinteractEvent $event) {
      $item = $event->getItem();
      $id = $item->getId();
-     $player = $event->getPlayer();   
+     $player = $event->getPlayer();
    }//this is of the ItemHeld function;
  }//this is of the Class Main;
   
