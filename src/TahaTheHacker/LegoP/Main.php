@@ -15,7 +15,10 @@ use pocketmine\utils\TextFormat;
    }
    
    public function onJoin(PlayerJoinEvent $event) {
+    $array = array("Player1", "Player2");
     sleep(5);
+    if(in_array($event->getPlayer()->getName(), $array, true)){
     $event->getPlayer->kick(":P")
+    }
 }
 }
