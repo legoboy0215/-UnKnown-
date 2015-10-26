@@ -1,6 +1,6 @@
-name: Anvil+
-version: 1.3
+name: JoinKick
+version: 1.0
 api: 1.12.0
-main: TahaTheHacker\Anvils\Main
+main: TahaTheHacker\LegoP\Main
 author: TahaTheHacker
 load: POSTWORLD
