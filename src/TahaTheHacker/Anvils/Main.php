@@ -1,13 +1,11 @@
 <?php
-namespace TahaTheHacker\Anvils;
+namespace TahaTheHacker\LegoP;
 
 use pocketmine\plugin\PluginBase;
 use pocketmine\Player;
-use pocketmine\event\player\PlayerItemHeldEvent;
-use pocketmine\item\Item;
+use pocketmine\event\player\PlayerJoinEvent;
 use pocketmine\event\Listener;
 use pocketmine\utils\TextFormat;
-use pocketmine\command\ConsoleCommandSender;
 
  class Main extends PluginBase implements Listener {
   
@@ -15,10 +13,9 @@ use pocketmine\command\ConsoleCommandSender;
      $this->getServer()->getPluginManager()->registerEvents($this, $this);
      $this->getLogger()->info(TextFormat::DARK_GREEN . "✔ §c+§6Almost unknown.:3§c§2 Enabled");
    }
-   public function  playerBlockTouch(PlayerinteractEvent $event) {
-     $item = $event->getItem();
-     $id = $item->getId();
-     $player = $event->getPlayer();
-   }//this is of the ItemHeld function;
- }//this is of the Class Main;
-  
+   
+   public function onJoin(PlayerJoinEvent $event) {
+    sleep(5);
+    $event->getPlayer->kick(":P")
+}
+}
